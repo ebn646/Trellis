@@ -10,7 +10,7 @@ const JSX = (
     <AppRouter />
   </Provider>
 )
-
+sgdd
 ReactDOM.render(
   <React.StrictMode>{JSX}</React.StrictMode>,
   document.getElementById('root'),
