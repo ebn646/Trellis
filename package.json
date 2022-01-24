@@ -15,7 +15,7 @@
     "lint:fix": "npm run lint -- --fix",
     "lint:all": "npm run lint && cd client && npm run lint",
     "client": "cd client && npm start",
-    "heroku-postbuild": "cd client && npm install && npm run build",
+    "build": "cd client && npm install && npm run build",
     "trellis": "concurrently \"npm run dev\" \"npm run client\"",
     "ci:build": "npm ci && cd client && npm ci"
   },
