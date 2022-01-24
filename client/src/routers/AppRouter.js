@@ -32,7 +32,7 @@ const AppRouter = () => {
     }
     dispatch(checkTokenValidity(token))
     //* eslint-disable next-line *//
-  }, [])
+  }, [dispatch])
 
   return (
     <>
