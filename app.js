@@ -9,6 +9,7 @@ const listHandler = require('./api/listHandler')
 const cardHandler = require('./api/cardHandler')
 const userHandler = require('./api/userHandler')
 const activityHandler = require('./api/activityHandler')
+const PORT = process.env.PORT || 1313
 
 const app = express()
 
@@ -39,5 +40,11 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.use(notFoundHandler)
+
+
+app.listen(PORT, () => {
+    console.log(`Server listening on port ${PORT}`)
+})
+
 
 module.exports = app
